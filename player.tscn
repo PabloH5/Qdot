@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c322j1oun21yo"]
+
+[ext_resource type="Texture2D" uid="uid://dvudmtj12j7e2" path="res://Sprites/Enrique.png" id="1_8sa8s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vm4iq"]
+size = Vector2(128, 128)
+
+[node name="Player" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8sa8s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vm4iq")
+debug_color = Color(0, 0.537255, 0.588235, 0.423529)
