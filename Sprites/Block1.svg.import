@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b018vmuvjilcs"
-path="res://.godot/imported/Block1.png-a69ca415ac23bad3cd4cbec7395ab9c5.ctex"
+uid="uid://8pxb0yy8mu5g"
+path="res://.godot/imported/Block1.svg-df92650920c3e724ab7a808ed80159ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Block1.png"
-dest_files=["res://.godot/imported/Block1.png-a69ca415ac23bad3cd4cbec7395ab9c5.ctex"]
+source_file="res://Sprites/Block1.svg"
+dest_files=["res://.godot/imported/Block1.svg-df92650920c3e724ab7a808ed80159ee.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

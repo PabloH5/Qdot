@@ -1,16 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://c322j1oun21yo"]
+[gd_scene load_steps=6 format=3 uid="uid://bk47hvadusjr8"]
 
-[ext_resource type="Texture2D" uid="uid://dvudmtj12j7e2" path="res://Sprites/Enrique.png" id="1_8sa8s"]
+[ext_resource type="Script" path="res://scripts/custom.gd" id="1_8lxgg"]
+[ext_resource type="Shader" path="res://customColor.gdshader" id="2_o4s50"]
+[ext_resource type="Texture2D" uid="uid://btuh1aqvxk5ff" path="res://Sprites/Cube1.svg" id="3_e4mmo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mc280"]
+shader = ExtResource("2_o4s50")
+shader_parameter/primary_color = Color(1, 1, 1, 1)
+shader_parameter/secondary_color = Color(0.94902, 0.94902, 0.94902, 1)
+shader_parameter/custom_primary_color = Color(0.235, 0.94, 0, 1)
+shader_parameter/custom_secondary_color = Color(1, 1, 1, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vm4iq"]
 size = Vector2(128, 128)
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="Area2D" node_paths=PackedStringArray("sprite_player")]
+script = ExtResource("1_8lxgg")
+sprite_player = NodePath("Sprite2D")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_8sa8s")
+material = SubResource("ShaderMaterial_mc280")
+position = Vector2(64, -64)
+texture = ExtResource("3_e4mmo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, -64)
 shape = SubResource("RectangleShape2D_vm4iq")
 debug_color = Color(0, 0.537255, 0.588235, 0.423529)
