@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk47hvadusjr8"]
+
+[ext_resource type="Script" path="res://scripts/custom.gd" id="1_8lxgg"]
+[ext_resource type="Texture2D" uid="uid://rt55ejimsahf" path="res://Sprites/cube_01.svg" id="2_27xbo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vm4iq"]
+size = Vector2(128, 128)
+
+[node name="Player" type="Area2D"]
+position = Vector2(0, 600)
+script = ExtResource("1_8lxgg")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, -64)
+shape = SubResource("RectangleShape2D_vm4iq")
+debug_color = Color(0, 0.537255, 0.588235, 0.423529)
+
+[node name="secondary_color_sprite" type="Sprite2D" parent="."]
+modulate = Color(0.761311, 0.944986, 0.731341, 1)
+position = Vector2(64, -64)
+texture = ExtResource("2_27xbo")
+region_enabled = true
+region_rect = Rect2(128, 0, 128, 128)
+
+[node name="primary_color_sprite" type="Sprite2D" parent="."]
+modulate = Color(0.458405, 0.458405, 0.458405, 1)
+position = Vector2(64, -64)
+texture = ExtResource("2_27xbo")
+region_enabled = true
+region_rect = Rect2(0, 0, 128, 128)

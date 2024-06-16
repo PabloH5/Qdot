@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_4" data-name="Capa 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 128">
+  <rect x="147.13" y="19.13" width="89.74" height="89.74" style="fill: #fff; stroke-width: 0px;"/>
+  <g id="Face">
+    <rect x="36.34" y="42.44" width="18.16" height="18.16" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <rect x="71.85" y="42.44" width="18.16" height="18.16" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <rect x="37.09" y="30.94" width="25.89" height="5.72" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <rect x="69.73" y="30.94" width="25.89" height="5.72" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <polygon points="75.93 83.65 75.93 93.75 50.04 93.75 50.04 83.65 54.28 83.65 54.28 88.02 71.69 88.02 71.69 83.65 75.93 83.65" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <rect id="Nose" x="59.73" y="66.71" width="25.89" height="5.72" style="fill: #fff; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  </g>
+  <g id="Body">
+    <path d="m1.61,126.5V1.5h125v125H1.61Zm16.13-16.13h92.75V17.63H17.74v92.74Z" style="fill: #fff; stroke-width: 0px;"/>
+    <path d="m125.11,3v122H3.11V3h122M16.24,111.87h95.74V16.13H16.24v95.74M128.11,0H.11v128h128V0h0ZM19.24,108.87V19.13h89.74v89.74H19.24Z" style="fill: #050505; stroke-width: 0px;"/>
+  </g>
+</svg>
